@@ -1,0 +1,116 @@
+.about-team
+  padding: 12.8rem 0 0 0
+
+  &__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__main-header
+    width: 40%
+
+  &__desc-header
+    color: $blue
+    font-size: 2rem
+    font-family: $text-font
+    font-weight: 300
+
+    width: 40%
+    margin-right: 7rem
+
+  &__title
+    font-size: 4.4rem
+    color: $blue
+    font-family: $head-font
+    font-weight: 700
+    margin-top: 3.6rem
+
+  &__content
+    display: flex
+    flex-wrap: wrap
+    margin-top: 2rem
+
+    justify-content: space-between
+
+  &__item
+    width: 30%
+    flex-direction: column
+    margin-bottom: 16rem
+
+  &__photo
+    width: 100%
+    height: auto
+
+  &__img
+    width: 100%
+    height: auto
+    object-fit: cover
+
+  &__name
+    display: block
+    transform: translateX(3rem) translateY(-50%)
+
+    color: $white
+    font-size: 1.6rem
+    font-family: $text-font
+    font-weight: 300
+    text-transform: uppercase
+    letter-spacing: 0.17em
+
+    background-color: $blue
+    padding: 1.3rem 1.3rem
+    width: 100%
+    position: relative
+
+@media (max-width: 769px)
+  .about-team
+    padding: 6.4rem 0 0 0
+
+    &__desc-header
+      font-size: 1.6rem
+      margin-right: 0
+
+    &__content
+      margin-top: 6.4rem
+
+    &__item
+      width: 45%
+      margin-bottom: 5.6rem
+
+    &__name
+      font-size: 1.4rem
+
+@media (max-width: 500px)
+  .topic--about-team
+    margin: 0 auto
+
+  .about-team
+    padding: 4rem 0 0 0
+
+    &__main-header
+      width: 100%
+      font-size: 3.6rem
+
+      margin-bottom: 3rem
+      margin-top: 2rem
+
+    &__desc-header
+      width: 100%
+      text-align: center
+
+    &__header
+      flex-direction: column
+
+    &__title
+      text-align: center
+      font-size: 2.2rem
+
+      margin-top: 2rem
+
+    &__name
+      transform: translateY(-2px)
+
+
+
+
+

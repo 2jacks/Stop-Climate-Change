@@ -1,0 +1,126 @@
+/*Hero*/
+.hero
+  background: $green url('../img/hero/hero-bg.jpg') center no-repeat
+  background-size: cover
+  padding: 25.6rem 0 13rem 0
+  position: relative
+
+
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(53, 68, 99, 0.25)
+    z-index: 0
+
+.hero__inner
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  z-index: 5
+  justify-content: space-around
+
+.hero__content
+  background-color: $white
+  padding: 7.5rem 6.5rem
+  position: relative
+  max-width: 50%
+
+
+.hero__text
+  font-size: 4.4rem
+  color: $blue
+  font-family: $head-font
+  margin-bottom: 7.3rem
+
+.hero__link
+  font-size: 1.6rem
+  color: $blue
+  font-family: $text-font
+
+.topic--hero
+  position: absolute
+  top: 0
+  transform: translateY(-50%)
+
+@media (max-width: 768px)
+  .hero__inner
+    flex-direction: column
+  .hero__content
+    padding: 6rem 6.5rem
+
+    order: 1
+    max-width: 100%
+    margin-top: 9rem
+
+  .hero__text
+    font-size: 3.6rem
+    margin-bottom: 1.7rem
+  .motto--hero
+    order: -1
+    font-size: 4.4rem
+    align-self: flex-start
+
+@media (max-width: 500px)
+  .hero
+    padding: 20rem 0 8rem 0
+
+  .hero__content
+    padding: 5rem 4rem
+  .hero__text
+    font-size: 2rem
+
+  .motto--hero
+    font-size: 3.2rem
+
+
+/*Take action*/
+
+.take-action
+  background: $green
+  position: relative
+
+.topic--take-action
+  position: absolute
+  left: 50%
+  margin: 0 auto
+  transform: translateY(-50%) translateX(-50%)
+
+.take-action__inner
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  padding: 4rem 0
+
+.take-action__item
+  width: 22%
+
+.take-action__title
+  font-size: 2.8rem
+  font-weight: 700
+  font-family: $head-font
+  color: $blue
+
+  margin-bottom: .8rem
+
+.take-action__desc
+  font-size: 1.6rem
+  font-weight: 300
+  font-family: $text-font
+  line-height: 1.5
+  color: $blue
+
+@media (max-width: 768px)
+  .take-action__item
+    width: 40%
+    margin-bottom: 3.7rem
+
+  .take-action__title
+    font-size: 2.2rem
+
+  .take-action__inner
+    padding: 4rem 0 1.8rem 0

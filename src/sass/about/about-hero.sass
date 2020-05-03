@@ -1,0 +1,47 @@
+.hero--about
+  background: $blue url('../img/about-hero/hero-bg.jpg') center no-repeat
+  background-size: cover
+  padding: 25.6rem 0 13rem 0
+  position: relative
+
+.hero__inner--about
+  display: flex
+  justify-content: flex-start
+  align-self: flex-start
+
+.hero__content--about
+  position: absolute
+  bottom: -18rem
+  right: 0
+
+  padding: 5rem 4.5rem
+
+.hero__text--about
+  font-size: 2.8rem
+  margin-bottom: 0
+
+.motto--hero-about
+  line-height: 1.5
+
+@media (max-width: 768px)
+  .hero--about
+    background: $blue url('../img/about-hero/bg-md.png') center no-repeat
+    background-size: cover
+    padding: 14.6rem 0 6.4rem 0
+
+  .hero__content--about
+    position: relative
+    bottom: auto
+
+@media (max-width: 500px)
+  .hero--about
+    background: $blue url('../img/about-hero/bg-sm.png') center no-repeat
+    background-size: cover
+    padding: 10rem 0 3.2rem 0
+
+  .hero__text--about
+    font-size: 2.2rem
+
+  .hero__content--about
+    padding: 4rem 3.2rem 2.4rem 3.2rem
+    margin-top: 12rem

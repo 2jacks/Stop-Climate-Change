@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="36.636"
+     viewBox="0 0 57 36.636">
+    <defs>
+        <clipPath id="clip-path">
+            <rect width="57" height="36.636" fill="none"/>
+        </clipPath>
+    </defs>
+    <g id="Icon_people" data-name="Icon people" clip-path="url(#clip-path)">
+        <path id="Path_16" data-name="Path 16"
+              d="M39.182,20.273a7.636,7.636,0,1,0-7.636-7.636A7.6,7.6,0,0,0,39.182,20.273Zm-20.364,0a7.636,7.636,0,1,0-7.636-7.636A7.6,7.6,0,0,0,18.818,20.273Zm0,5.091C12.887,25.364,1,28.342,1,34.273v6.364H36.636V34.273C36.636,28.342,24.749,25.364,18.818,25.364Zm20.364,0c-.738,0-1.578.051-2.469.127,2.953,2.138,5.015,5.015,5.015,8.782v6.364H57V34.273C57,28.342,45.113,25.364,39.182,25.364Z"
+              transform="translate(-0.5 -4.5)" fill="none" stroke="#c1f7d5" stroke-width="1"/>
+    </g>
+</svg>

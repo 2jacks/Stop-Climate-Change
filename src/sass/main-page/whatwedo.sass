@@ -1,0 +1,158 @@
+/* What We Do*/
+
+.whatwedo
+  background-color: $blue
+  overflow: hidden
+
+  &__inner
+    padding: 8rem 0
+
+  &__title
+    margin: 4rem 0 7.2rem 0
+
+    font-size: 4.4rem
+    color: $white
+    font-family: $head-font
+    font-weight: 700
+
+  &__content
+    display: flex
+    justify-content: space-between
+
+  &__item
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 31%
+    max-width: 450px
+
+    background-color: $white
+
+  &__picture
+    width: 100%
+    margin-bottom: 3rem
+    transform: translate3d(3.2rem, -3.2rem, 0)
+
+  &__img
+    width: 100%
+    height: auto
+    object-fit: cover
+
+  &__article
+    margin-bottom: 2.4rem
+    padding: 0 3.2rem
+    flex-direction: column
+
+  &__header
+    font-size: 2.8rem
+    color: $blue
+    font-family: $head-font
+    font-weight: 700
+
+    margin-bottom: .8rem
+
+  &__text
+    font-size: 1.6rem
+    color: $blue
+    font-family: $text-font
+    font-weight: 300
+
+  &__btn-wrapper
+    margin-left: 3.2rem
+    margin-bottom: 3.2rem
+
+.button--whatwedo-md
+  display: none
+
+@media (max-width: 768px)
+  .button--whatwedo-md
+    display: block
+    position: relative
+    margin-right: 0
+    margin-left: auto
+
+  .button--whatwedo-lg
+    display: none
+  .whatwedo
+
+    &__title
+      font-size: 3.6rem
+
+    &__content
+      flex-direction: column
+      align-items: center
+
+    &__item
+      width: 100%
+      max-width: none
+      flex-direction: row
+      justify-content: space-between
+
+      margin-bottom: 6.4rem
+
+      &:last-child
+        margin-bottom: 0
+
+    &__picture
+      width: 45%
+      min-width: 25rem
+
+      margin-bottom: 0
+
+    &__img
+      margin-bottom: 2.3rem
+
+    &__article
+      width: 46%
+      align-self: center
+      margin-top: 2.4rem
+
+    &__btn-wrapper
+      margin: 0
+
+@media (max-width: 600px)
+  .button--whatwedo-md
+    display: none
+
+  .button--whatwedo-lg
+    display: block
+    margin: 0 auto
+
+  .whatwedo
+    &__inner
+      padding: 5rem 0
+
+    &__content
+      flex-direction: column
+
+    &__item
+      justify-content: center
+      flex-direction: column
+
+
+    &__picture
+      transform: translate3d(0, 0, 0)
+      width: 100%
+      min-width: 0
+      margin-bottom: 1rem
+
+    &__article
+      text-align: center
+      margin-top: 0
+      padding: 0
+      width: 90%
+
+    &__header
+      text-align: center
+      font-size: 2.4rem
+
+    &__title
+      margin: 2rem 0 5rem 0
+
+      font-size: 2.4rem
+
+    &__text
+      font-size: 1.4rem
+
+    &__btn-wrapper
+      margin-bottom: 3.2rem

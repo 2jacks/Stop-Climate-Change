@@ -1,0 +1,77 @@
+.about-story
+  background-color: $blue
+  padding: 13rem 0
+
+  &__title
+    font-family: $accent-font
+    color: $white
+    font-size: 7.2rem
+
+    margin-bottom: 9rem
+
+  &__content
+    display: flex
+
+  &__item
+    display: flex
+    flex-direction: column
+    position: relative
+    width: 40%
+    margin-right: 3rem
+
+    background-color: $white
+    overflow: hidden
+
+  &__item-inner
+    width: 80%
+    margin: 0 auto
+    padding: 6rem 0
+
+  &__photo
+    width: 100%
+    height: auto
+
+  &__img
+    width: 100%
+    height: auto
+    object-fit: cover
+
+
+  &__event-name
+    color: $blue
+    font-size: 2.8rem
+    font-weight: 700
+    font-family: $head-font
+
+    margin-bottom: 2.4rem
+
+  &__event-desc
+    font-size: 2rem
+    color: $blue
+    font-family: $text-font
+    font-weight: 300
+
+    margin-bottom: 2.4rem
+
+.topic--about-story
+  position: absolute
+  transform: translateY(-50%) translateX(5rem)
+
+@media (max-width: 769px)
+  .about-story
+    padding: 6.4rem 0
+
+    &__title
+      font-size: 4.4rem
+      margin-bottom: 6rem
+
+    &__item-inner
+      width: 80%
+      margin: 0 auto
+      padding: 3.2rem 0
+
+    &__event-name
+      font-size: 2.2rem
+
+    &__event-desc
+      font-size: 1.6rem

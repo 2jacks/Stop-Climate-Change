@@ -1,0 +1,85 @@
+.about-impact
+  background: $blue url('../img/impact-bg.png') center no-repeat
+  background-size: cover
+  padding: 12.8rem 0
+
+  &__title
+    color: $white
+    font-size: 4.4rem
+    font-family: $head-font
+    font-weight: 700
+    margin-top: 4rem
+    text-align: center
+
+    margin: 0 auto
+    margin-top: 4rem
+    width: 60%
+
+  &__content
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+    margin-top: 7rem
+
+  &__item
+    width: 20%
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &__number
+    font-family: $accent-font
+    font-size: 7.2rem
+    color: $white
+
+    margin-bottom: 1.6rem
+
+  &__desc
+    font-size: 2.8rem
+    color: $white
+    font-weight: 700
+    font-family: $head-font
+
+.topic--impact
+  margin: 0 auto
+
+
+@media (max-width: 769px)
+  .about-impact
+    padding: 6.4rem 0
+
+    &__title
+      font-size: 3.6rem
+      width: 100%
+
+    &__item
+      width: 45%
+      margin-bottom: 6rem
+
+    &__desc
+      font-size: 2.2rem
+      text-align: center
+
+@media (max-width: 500px)
+  .about-impact
+    padding: 3.2rem 0
+
+    &__content
+      margin-top: 3rem
+
+    &__title
+      font-size: 2.2rem
+      width: 100%
+      margin-top: 2.6rem
+
+    &__item
+      width: 100%
+      margin-bottom: 3.4rem
+
+    &__number
+      font-size: 4.4rem
+
+    &__desc
+      font-size: 1.6rem
+      text-align: center

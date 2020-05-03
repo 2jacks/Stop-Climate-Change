@@ -1,0 +1,140 @@
+.section-header
+  color: $white
+  font-size: 4.4rem
+  font-family: $accent-font
+
+.news-latest
+  background-color: $blue
+  padding: 6.4rem 0
+
+  &__header
+    display: flex
+    justify-content: space-between
+
+    margin-bottom: 6rem
+
+  &__social
+    display: flex
+    align-items: center
+
+  &__social-wrapper
+    display: flex
+
+  &__social-item
+    width: 40px
+    height: 40px
+
+    margin-right: 1.4rem
+
+    &:last-child
+      margin-right: 0
+
+  &__call
+    font-size: 1.4rem
+    color: #ffffff
+    text-transform: uppercase
+    font-family: $text-font
+    margin-right: 1.7rem
+
+  &__content
+    display: flex
+    justify-content: space-between
+
+  &__desc
+    background-color: $green
+
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 48%
+
+  &__desc-inner
+    width: 80%
+    padding: 3rem 0
+
+  &__title
+    font-size: 3.6rem
+    color: $blue
+    font-weight: 700
+    font-family: $head-font
+
+    margin-bottom: 3rem
+
+  &__text
+    font-size: 2rem
+    color: $blue
+    font-weight: 300
+    font-family: $text-font
+
+    margin-bottom: 3.6rem
+
+  &__continue
+    font-size: 2rem
+    color: $blue
+    font-weight: 300
+    font-family: $text-font
+
+  &__photo
+    width: 48%
+    height: auto
+
+  &__img
+    width: 100%
+    height: auto
+    object-fit: cover
+
+@media (max-width: 768px)
+  .news-latest
+    &__title
+      font-size: 2.2rem
+
+      margin-bottom: 1.2rem
+
+    &__text
+      font-size: 1.4rem
+
+      margin-bottom: 1.2rem
+
+    &__continue
+      font-size: 1.4rem
+
+    &__img
+      height: 100%
+
+@media (max-width: 530px)
+  .section-header--news-latest
+    order: 2
+
+  .news-latest
+    &__header
+      flex-direction: column
+      margin-bottom: 2.4rem
+
+    &__social
+      order: -1
+      margin-bottom: 3.2rem
+      flex-direction: column
+      align-items: flex-start
+
+    &__content
+      flex-direction: column
+      align-items: center
+
+    &__photo
+      width: 100%
+      order: 1
+
+    &__desc
+      width: 100%
+      order: 2
+
+    &__call
+
+      margin-bottom: 1.2rem
+
+    &__social-wrapper
+
+
+
+
+

@@ -1,0 +1,132 @@
+.stat
+  background: $green url('../img/stat-bg.jpg') center no-repeat
+  background-size: cover
+  padding: 12.8rem 0
+
+.stat__inner
+  display: flex
+  justify-content: space-between
+
+//  ???
+.stat__trigger
+  width: 30%
+
+.stat__content
+  width: 60%
+  min-width: 50%
+
+.motto--stat
+  margin-bottom: 4.4rem
+
+.stat__item
+  position: relative
+  padding: 4.9rem 5.6rem 5.6rem 6.4rem
+  margin-bottom: 3.2rem
+
+  display: flex
+  justify-content: space-between
+
+  background-color: $white
+
+  &:last-child
+    margin-bottom: 0
+
+.stat__info
+  margin-right: 20%
+
+.stat__title
+  color: $blue
+  font-size: 4.4rem
+  font-family: $head-font
+  font-weight: 700
+
+.stat__text
+  color: $blue
+  font-family: $text-font
+  font-size: 2rem
+  font-weight: 300
+  line-height: 1.5
+
+.stat__social
+  display: flex
+  flex-direction: column
+  align-self: center
+
+
+.social-item--stat
+  background-color: $green
+  border-radius: 2em
+
+  width: 3.2rem
+  height: 3.2rem
+
+  margin-bottom: 1.6rem
+
+  &:last-child
+    margin-bottom: 0
+
+.topic--stat
+  position: absolute
+  transform: translateY(calc(-50% - 4.9rem))
+
+@media (max-width: 768px)
+  .stat__item
+    position: relative
+    padding: 2.9rem 3.6rem 3.6rem 4.4rem
+
+  .stat__title
+    font-size: 3.6rem
+
+  .stat__content
+    width: 60%
+    min-width: 50%
+
+  .topic--stat
+    position: absolute
+    transform: translateY(calc(-50% - 2.9rem))
+
+@media (max-width: 500px)
+  .stat
+    padding: 5.8rem 0
+
+  .stat__inner
+    flex-direction: column
+    align-items: center
+
+  .stat__trigger
+    width: 100%
+
+  .motto--stat
+    margin-bottom: 2rem
+
+  .stat__content
+    width: 100%
+    margin-bottom: 2rem
+
+  .stat__item
+    position: relative
+    padding: 2rem 3rem
+    flex-direction: column
+
+  .stat__info
+    margin-right: 0
+    margin-bottom: 2rem
+
+  .stat__social
+    flex-direction: row
+
+  .social-item--stat
+    margin-bottom: 0
+    margin-right: 3rem
+
+    &:last-child
+      margin-right: 0
+
+  .stat__trigger
+    order: 2
+
+  .stat__content
+    order: 1
+
+  .motto--stat
+    font-size: 3.2rem

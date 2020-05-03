@@ -1,0 +1,143 @@
+.stories
+  background-color: $white
+
+#stories__slider
+
+.slick-arrow
+  display: none
+  font-size: 0
+
+.slick-dots
+  display: flex
+  list-style: none
+
+  margin-bottom: 6.4rem
+  justify-content: center
+
+  button
+    display: block
+    width: 20px
+    height: 20px
+
+    font-size: 0
+    border: 2px solid $blue
+    border-radius: 50%
+
+    margin: 0 7px
+    transition: all .2s ease
+
+.slick-active button
+  background-color: $blue
+
+.stories__item
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  padding: 13rem 0 8rem 0
+
+.stories__desc
+  width: 50%
+  max-width: 550px
+
+  position: relative
+  right: -60px
+  z-index: 2
+
+.stories__quote
+  padding: 5.2rem 0
+
+  background-color: $blue
+
+.stories__quote-inner
+  width: 80%
+  margin: 0 auto
+
+.stories__photo
+  width: 46%
+  min-width: 55rem
+
+.button--stories
+  position: absolute
+  margin-top: 10%
+  left: 0
+
+.stories__text
+  font-size: 2.8rem
+  color: $white
+  font-family: $head-font
+  font-weight: 700
+
+  margin-bottom: 3rem
+
+.stories__author
+  font-size: 1.4rem
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: .3rem
+  color: $white
+
+.stories__img
+  object-fit: cover
+  width: 100%
+  height: auto
+
+.topic--stories
+  position: absolute
+  transform: translateY(-50%) translateX(10rem)
+
+@media (max-width: 991px)
+  .stories
+    &__item
+      flex-direction: column
+      height: auto
+
+    &__photo
+      order: 1
+      width: 70%
+      min-width: 25rem
+      position: relative
+
+  .stories__desc
+    order: 2
+    right: 0
+    width: 70%
+    transform: translateX(7rem) translateY(-15%)
+
+  .button--stories
+
+
+@media (max-width: 769px)
+  .stories
+    &__text
+      font-size: 2.2rem
+
+    &__quote
+      padding: 3rem 0
+
+@media (max-width: 500px)
+  .stories__item
+
+  .topic--stories
+    left: 50%
+    transform: translateY(-50%) translateX(-50%)
+
+  .button--stories
+    left: 50%
+    transform: translate(-50%, 0)
+    margin-top: 3.2rem
+
+  .stories__desc
+    width: 100%
+    transform: translateY(-2px)
+    padding: 0
+    margin-bottom: 2rem
+
+  .stories__text
+    font-size: 1.8rem
+    margin-bottom: 2rem
+
+
+  .stories__photo
+    width: 100%
+    min-width: 0
